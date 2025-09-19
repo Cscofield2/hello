@@ -43,14 +43,16 @@ if (argc != 6){
     startingBalance += monthlyDeposit + interest;
     totalInterest += interest;
     totalBalance = startingBalance;
+    interest = round(interest * 100) / 100;
+    startingBalance = round(startingBalance * 100) / 100;
     printf("%d $        %.2lf $        %.2lf\n", i, interest, startingBalance);
     }
 }else {
     printf("Monthly contributions exceed $18,500 annual limit\n");
     return 1;
 }
-    //totalInterest = round(totalInterest * 100) /100;
-   // totalBalance = round(totalBalance * 100) /100;
+    totalInterest = round(totalInterest * 100) /100;
+    totalBalance = round(totalBalance * 100) /100;
 
     printf("Total Interest Earned: $ %.2lf\n", totalInterest);
     printf("Total Balance: $ %.2lf\n", totalBalance);
