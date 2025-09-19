@@ -49,7 +49,7 @@ if (argc != 6){
     printf("Monthly contributions exceed $18,500 annual limit\n");
     return 1;
 }
-    totalInterest = round(totalInterest )
+    //totalInterest = round(totalInterest )
     printf("Total Interest Earned: $ %.2lf\n", totalInterest);
     printf("Total Balance: $ %.2lf\n", totalBalance);
 
