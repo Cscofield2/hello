@@ -35,8 +35,8 @@ if (argc != 6){
     }else {
         printf("Error: Please select values in the [0,1] for inflation and return rate!");
         }
-    printf("Month      Interest      Balance\n");
     if (monthlyDeposit <= 18500){
+    printf("Month      Interest      Balance\n");
     for (int i = 1; i <= yearsMonths; i++) {
 
     interest = startingBalance * monthlyAdjustment;
@@ -49,7 +49,7 @@ if (argc != 6){
     printf("Monthly contributions exceed $18,500 annual limit\n");
     return 1;
 }
-    //totalInterest = round(totalInterest )
+    totalInterest = round(totalInterest )
     printf("Total Interest Earned: $ %.2lf\n", totalInterest);
     printf("Total Balance: $ %.2lf\n", totalBalance);
 
